@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  	<title>Bill Splitter</title>
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="/public/style.css">
+  	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<div class="container-fluid">
+	
+	<!-- Header -->
+	<nav class="navbar navbar-expand-sm navbar-dark">
+		<a class="navbar-brand" href="/">Bill Splitter</a>
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="/create">Create</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/edit">Edit</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/split">Split</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="help">Help</a>
+			</li>
+		</ul>
+	</nav>
+	<!------------------------------------------------------------------------->
+
+	<h1 class="balance">Help</h1>
+	<hr>
+	<h2>Getting started:</h2>
+	<p>To start splitting your bills you have to first create a session. To do this go to <span>create</span> and fill the form. The page will respond with a pin, save this somewhere safe. By creating a session you allow all your friends to add what they paid from their own device.</p>
+	<hr>
+	<h2>Adding payments:</h2>
+	<p>To add a payment go to <span>edit</span>. Use your pin (the one you saved somewhere safe!) to access your session and add your payment. <br> Note: the cost should be a numeric value. Inputs like <span>$15.05</span> or <span>3.95 dollars</span> won't get processed by the app.</p>
+	<hr>
+	<h2>Checking your session's status:</h2>
+	<p>Whether you are ready to split your bills or you just want to know your payments so far, you can go to <span>split</span>. By splitting you get your session's whole history (payments by each person with date, description and cost) and who owns who.</p>
+
+	<footer class="page-footer fixed-bottom">
+		<h5>
+			Designed by Rodrigo Conde <a href="https://github.com/conderodrigo98"><i class="fab fa-github"></i></a>
+		</h5>
+	</footer>
+
+</div>
+</html>

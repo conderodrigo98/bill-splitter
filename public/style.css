@@ -1,0 +1,92 @@
+body{
+	overflow-x: hidden;
+}
+nav{
+	background-color: #04192e;
+	margin: 0 -1% 0 -1%;
+}
+.navbar-brand{
+	font-family: 'Open Sans', sans-serif;
+}
+.page-footer{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #04192e;
+	color: #cae6df !important;
+	margin: 0 -1% 0 -1%;
+}
+.fixed-bottom{
+	padding: 1% 0 1% 0;
+}
+.title{
+	text-align: center;
+	background-color: #064b55;
+	color: #cae6df; 
+	padding: 5% 0 5% 0;
+	margin: 10% -1% 0 -1%;
+	font-family: 'Open Sans', sans-serif;
+}
+h1{
+	font-size: 4rem;
+}
+
+form{
+	margin-top: 2%;
+}
+
+.success{
+	background-color: #0a674f;
+	text-align: center;
+	color: #cae6df; 
+	padding: 5% 0 5% 0;
+	margin: 10% -1% 0 -1%;
+}
+
+.error{
+	text-align: center;
+	background-color: #7F0000;
+	color: #E5CCCC; 
+	padding: 5% 0 5% 0;
+	margin: 10% -1% 0 -1%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.balance{
+	font-family: 'Open Sans', sans-serif;
+	margin: 1% 0 0 1%;
+}
+.jump{
+	margin: -3% 10% 0 0;
+	float: right;
+}
+.col{
+	border-color: #044541;
+	border-radius: 10px;
+	border-style: solid;
+	margin: 0 1% 0 1%;
+}
+.payment{
+	border-color: #0a674f;
+	border-radius: 10px;
+	border-style: solid;
+	margin: 1% 0 1% 0;
+	padding: 1% 1% 1% 1%;
+}
+.debts{
+	border-color: #044541;
+	border-radius: 10px;
+	border-style: solid;
+	background-color: #cae6df;
+	padding-left: 1%;
+	margin-bottom: 1%;
+}
+.debt{
+	min-width: 50%;
+}
+p{
+	text-align: right;
+}
+
+span{
+	font-style: italic;
+}

@@ -1,0 +1,41 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title Bill Splitter
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel="stylesheet" type="text/css" href="/public/style.css")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+	.container-fluid
+		nav(class='navbar navbar-expand-sm navbar-dark')
+			a(class='navbar-brand', href='/') Bill Splitter
+			ul(class='navbar-nav')
+				li(class='nav-item')
+					a(class='nav-link', href='/create') Create
+				li(class='nav-item')
+					a(class='nav-link', href='/edit') Edit
+				li(class='nav-item')
+					a(class='nav-link', href='/split') Split
+				li(class='nav-item')
+					a(class='nav-link', href='help') Help
+		//----------------------------------------------------------------------
+		.error
+			case error
+				when "generic"
+					h1 GENERIC ERROR!
+				when "missing_arg"
+					h1 MISSING ARGUMENT!
+				when "pin"
+					h1 NO SUCH PIN!
+				when "name"
+					h1 NO SUCH NAME!
+				when "cost"
+					h1 COST SHOULD BE NUMERIC!
+
+		footer(class="page-footer fixed-bottom")
+			h5
+				Designed by Rodrigo Conde 
+				a(href="https://github.com/conderodrigo98")
+					i(class="fab fa-github")

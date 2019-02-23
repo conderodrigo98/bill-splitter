@@ -1,0 +1,53 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		title Bill Splitter
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel="stylesheet" type="text/css" href="/public/style.css")
+		link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet")
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(type="text/javascript" src="/public/split.js")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+
+	.container-fluid
+		nav(class='navbar navbar-expand-sm navbar-dark')
+			a(class='navbar-brand', href='/') Bill Splitter
+			ul(class='navbar-nav')
+				li(class='nav-item')
+					a(class='nav-link', href='/create') Create
+				li(class='nav-item')
+					a(class='nav-link', href='/edit') Edit
+				li(class='nav-item')
+					a(class='nav-link', href='/split') Split
+				li(class='nav-item')
+					a(class='nav-link', href='help') Help
+		//----------------------------------------------------------------------
+		h1.balance Session Balance
+		button.btn.btn-success.jump Jump to Division
+		hr
+		h2 Session history
+		.history.row
+			each person in people
+				.col
+					h2= person.name
+					each payment in person.payments
+						.payment
+							strong Date:
+							p #{payment.date}
+							strong Description:
+							p #{payment.desc}
+							strong Cost:
+							p #{payment.cost}
+		hr
+		h2 Final division
+		.debts
+			each debt in debts
+				h2.debt= debt
+
+		footer(class="page-footer" style="padding: 1% 0 1% 0")
+			h5
+				Designed by Rodrigo Conde 
+				a(href="https://github.com/conderodrigo98")
+					i(class="fab fa-github")

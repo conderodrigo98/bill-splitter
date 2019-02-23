@@ -1,0 +1,27 @@
+{
+	"name": "BillSplitter",
+	"version": "0.0.1alpha",
+	"description": "A web-app that helps you split a bill between your friends",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"express": "^4.16.4",
+		"mongodb": "^3.0.0",
+		"mongoose": "^5.4.3",
+		"cors": "^2.8.1",
+		"body-parser": "^1.15.2",
+		"pug": "^2.0.0",
+	},
+	"engines": {
+		"node": "^10.0.0"
+	},
+	"keywords": [
+		"node",
+		"express",
+		"mongodb",
+		"bill"
+	],
+	"license": "MIT"
+}

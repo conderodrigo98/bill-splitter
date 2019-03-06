@@ -1,6 +1,6 @@
 # BILL SPLITTER
 
-A full-stack web app that helps you split bills with your friends. 
+A full-stack web app that helps you split bills with your friends. You can use it [here](https://conderodrigo98-bill-splitter.glitch.me/)
 
 Developed with:
 
